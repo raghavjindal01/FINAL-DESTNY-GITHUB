@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import HeroProducts from "@/components/HeroProducts";
@@ -11,17 +12,19 @@ import NewsletterSection from "@/components/NewsletterSection";
 import Footer from "@/components/Footer";
 
 const Index = () => {
+  const [isQuoteFormOpen, setIsQuoteFormOpen] = useState(false);
+
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
-      <HeroSection />
+      <HeroSection onQuoteClick={() => setIsQuoteFormOpen(true)} />
       <HeroProducts />
       <ServicesSection />
       <PricingArchitecture />
       <PrintingShowcase />
       <MVPSection />
       <HireSection />
-      <CTASection />
+      <CTASection isQuoteFormOpen={isQuoteFormOpen} onQuoteFormOpenChange={setIsQuoteFormOpen} />
       <NewsletterSection />
       <Footer />
     </div>

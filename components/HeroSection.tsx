@@ -11,7 +11,11 @@ const highlights = [
   { icon: Sparkles, label: "AI + growth systems" },
 ];
 
-const HeroSection = () => {
+type HeroSectionProps = {
+  onQuoteClick: () => void;
+};
+
+const HeroSection = ({ onQuoteClick }: HeroSectionProps) => {
   return (
     <section id="home" className="relative min-h-[92vh] flex items-center pt-24 overflow-hidden">
       <div className="absolute inset-0">
@@ -38,7 +42,7 @@ const HeroSection = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 mt-9">
-            <Link to="/#contact">
+            <Link to="/#contact" onClick={onQuoteClick}>
               <Button size="lg" className="glow-primary gap-2 w-full sm:w-auto">
                 Get a Same-Day Quote <ArrowRight className="h-4 w-4" />
               </Button>
