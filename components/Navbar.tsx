@@ -9,6 +9,7 @@ const navItems = [
   { label: "About", href: "/#about" },
   { label: "Services", href: "/#services" },
   { label: "3D Printing", href: "/3d-printing" },
+  { label: "Your Orders", href: "/orders" },
   { label: "Pricing", href: "/#pricing" },
   { label: "Developers", href: "/#developers" },
   { label: "Contact", href: "/#contact" },

@@ -8,6 +8,7 @@ import Index from "./pages/Index";
 import Printing3D from "./pages/Printing3D";
 import Auth from "./pages/Auth";
 import Dashboard from "./pages/Dashboard";
+import Orders from "./pages/Orders";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -41,6 +42,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/3d-printing" element={<Printing3D />} />
           <Route path="/auth" element={<Auth />} />
+          <Route path="/orders" element={<Orders />} />
           <Route path="/dashboard" element={<Dashboard />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />

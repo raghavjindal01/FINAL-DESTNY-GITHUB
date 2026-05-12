@@ -8,6 +8,7 @@ const footerSections = [
       { label: "About", href: "/#about" },
       { label: "Services", href: "/#services" },
       { label: "3D Printing", href: "/3d-printing" },
+      { label: "Your Orders", href: "/orders" },
       { label: "MVP Build", href: "/#mvp" },
     ],
   },
